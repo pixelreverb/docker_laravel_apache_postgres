@@ -55,6 +55,13 @@ Where `php-apache` is the name of the service defined with in the `docker-compos
 1. First open a terminal session with the above-mentioned command
 2. Then simply run `composer update`
 
+
+## Additional note
+
+This repository is somewhat part of my learning to handle, configure and work with the Docker eco-system. If you find it helpful, you're welcome - star it, clone it, fork it or do nothing at all, up to you.
+Anyway, Laravel has its own application to handle Docker images called **Laravel Sail**. Find more info about it [here](https://laravel.com/docs/sail).
+
+
 ## License
 
 See LICENSE.md

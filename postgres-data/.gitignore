@@ -1,0 +1,9 @@
+*.DS_Store
+*.conf
+*.opts
+PG_VERSION
+
+
+base/
+global/
+pg_*/

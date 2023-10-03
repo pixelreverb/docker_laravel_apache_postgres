@@ -15,7 +15,7 @@ services:
       - ./postgres-data:/var/lib/postgresql/data
     ports:
       # do some port matching: local <> docker
-      - '5432:5432'
+      - 5432:5432
 
   # define the web server container
   php-apache:
@@ -24,7 +24,8 @@ services:
       context: ./php
     ports:
       # do some port matching
-      - '8080:80'
+      - 80:80
+      - 5173:5173  # vite development server
     volumes:
       - ./src:/var/www/laravel_docker # link the project source files to the working directory defined in `/php/Dockerfile`
       - ./apache/default.conf:/etc/apache2/sites-enabled/000-default.conf # link the apache configuration for the virtual host

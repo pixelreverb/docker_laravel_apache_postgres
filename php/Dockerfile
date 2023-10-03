@@ -13,3 +13,9 @@ WORKDIR /var/www/laravel_docker
 
 # install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# enable Apache modules
+RUN a2enmod rewrite
+
+# finally restart Apache
+RUN service apache2 restart
